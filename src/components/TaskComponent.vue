@@ -30,14 +30,14 @@ export default {
 </script>
 
 <template>
-  <label class="block bg-white p-2 m-2 border rounded-md border-gray-400">
-    <div class="flex gap-2">
-      <input class="ps-2" type="checkbox" v-model="this.task.isCompleted"/>
-      <span  class="block break-words text-center w-full" :class="this.task.isCompleted?'line-through italic':''">
+  <div class="block bg-white p-3 m-2 border rounded-md">
+    <div class="flex gap-x-2 items-start pe-2">
+      <input class="ps-2 h-5 w-5 flex-shrink-0" type="checkbox" v-model="this.task.isCompleted"/>
+      <p  class=" break-words flex-grow" :class="this.task.isCompleted?'disabled line-through italic text-gray-500':'text-black'">
             {{taskName}}
-          </span>
+          </p>
     </div>
-  </label>
+  </div>
 </template>
 
 <style scoped>
