@@ -1,11 +1,21 @@
 @import "tailwindcss";
 
-.bebas-neue {
-  font-family: "Bebas Neue", serif;
-  font-weight: 400;
+.mona-sans-bold {
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 700;
   font-style: normal;
 }
 
+.mona-sans-regular {
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.mona-sans-semi-bold {
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
 .inter-regular {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -40,16 +50,17 @@ h1 {
   font-size: 5rem !important;
 }
 
-body {
-  background: rgb(22, 196, 127);
-  background: linear-gradient(
-    90deg,
-    rgba(22, 196, 127, 1) 1%,
-    rgba(191, 209, 100, 1) 29%,
-    rgba(203, 210, 98, 1) 31%,
-    rgba(230, 212, 94, 1) 35%,
-    rgba(255, 214, 90, 1) 46%,
-    rgba(255, 157, 35, 1) 73%,
-    rgba(249, 56, 39, 1) 98%
-  );
-}
+/*body {*/
+/*  background: rgb(22, 196, 127);*/
+/*  background: linear-gradient(*/
+/*    90deg,*/
+/*    rgba(22, 196, 127, 1) 1%,*/
+/*    rgba(191, 209, 100, 1) 29%,*/
+/*    rgba(203, 210, 98, 1) 31%,*/
+/*    rgba(230, 212, 94, 1) 35%,*/
+/*    rgba(255, 214, 90, 1) 46%,*/
+/*    rgba(255, 157, 35, 1) 73%,*/
+/*    rgba(249, 56, 39, 1) 98%*/
+/*  );*/
+/*}*/
+
