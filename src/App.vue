@@ -23,9 +23,12 @@ export default {
   },
 
   methods: {
-    deleteList(listName){
-      this.taskLists.filter( list => list.listName !== listName );
-    },
+
+
+    // TODO: complete this later
+    // deleteList(listName){
+    //   this.taskLists.filter( list => list.listName !== listName );
+    // },
 
 
     //     ------------------GEMINI CODE-------------------------

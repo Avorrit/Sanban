@@ -27,7 +27,7 @@ export default {
       const newTask = {
         id: uuidv4(),
         name: trimmedName,
-        taskIsCompleted: false,
+        isCompleted: false,
       };
 
       this.tasks.push(newTask);
@@ -57,13 +57,20 @@ export default {
       }
     },
 
-    deleteTask(task){
-      this.tasks.filter(task => task.id !== task.id);
+    // TODO: complete this later
+    // deleteTask(task){
+    //   this.tasks = this.tasks.filter(task => task.id !== task.id);
+    // },
+
+    updateTaskStatus(taskId){
+      const completedTask = this.tasks.find(task => task.id === taskId);
+      completedTask.isCompleted = !completedTask.isCompleted;
     },
 
-    deleteList(){
-      this.$emit('delete-list', this.listName);
-    }
+    // TODO: complete this later
+    // deleteList(){
+    //   this.$emit('delete-list', this.listName);
+    // }
   }
 
 
@@ -75,9 +82,12 @@ export default {
       <div class="mona-sans-semi-bold rounded-md">
         <div class=" text-[#091057]  text-center m-2">{{listName}}
           <task v-for="task in tasks"
+                :is-completed="task.isCompleted"
                 :task-name="task.name"
                 :key="task.id"
+                :task-id="task.id"
                 @add-task="addTask"
+                @toggle-complete="updateTaskStatus"
           ></task>
         </div>
         <div class="flex">
